@@ -6,13 +6,8 @@ class HammerGameProvider extends ChangeNotifier {
   List<Jogador> jogadores = [];
   final int maximoDeJogadores = 5;
 
-  void adicionarNovoJogador(String nome) {
-    
-  }
-
+  void adicionarNovoJogador(String nome) {}
   // ... resto da lógica
 }
 
-class Jogador {
-  
-}
+class Jogador {}

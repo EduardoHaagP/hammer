@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CreateUsers extends StatelessWidget {
-  const CreateUsers({super.key});
+class Infos extends StatelessWidget {
+  const Infos({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Aqui será a criação dos jogadores!'),
+        child: Text('Aqui ficarão as regras!'),
       ),
     );
   }

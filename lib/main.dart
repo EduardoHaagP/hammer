@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+
+//pages
 import 'pages/create_users.dart';
+import 'pages/info.dart';
+import 'pages/config.dart';
+
+//styles
 import 'styles/app_colors.dart';
+import 'styles/app_styles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,9 +50,22 @@ class TelaInicial extends StatelessWidget {
                 children: [
                   IconButton(
                     icon: const Icon(Icons.info_outline),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Infos()),
+                      );
+                    },
                   ),
-                  IconButton(icon: const Icon(Icons.tag), onPressed: () {}),
+                  IconButton(
+                    icon: const Icon(Icons.tag),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Config()),
+                      );
+                    },
+                  ),
                 ],
               ),
 
@@ -54,16 +74,17 @@ class TelaInicial extends StatelessWidget {
 
               // 3. O botão "NOVO JOGO"
               SizedBox(
-                width: 250.0,
+                width: 250.0, 
                 height: 50.0,
                 child: ElevatedButton(
+                  style: AppStyles.botaoElevado,
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => CreateUsers()),
                     );
                   },
-                  child: const Text("NOVO JOGO"),
+                  child: Text("NOVO JOGO", style: AppStyles.titulo),
                 ),
               ),
 
