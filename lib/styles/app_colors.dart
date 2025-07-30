@@ -2,13 +2,47 @@ import 'package:flutter/material.dart';
 
 // Classe apenas para organizar nossas constantes de cor.
 class AppColors {
-  // O 'static const' significa que esses valores são constantes em tempo de compilação
   // e podem ser usados sem criar uma instância da classe (ex: AppColors.primary)
-  
-  static const Color primary = Color(0xFF3F51B5); // Cor principal
-  static const Color background = Color(0xFF121212); // Fundo escuro como no wireframe
-  static const Color surface = Color(0xFF1E1E1E); // Cor dos cards e superfícies
-  static const Color text = Colors.white; // Cor do texto principal
-  static const Color textSecondary = Colors.grey; // Cor do texto secundário
-  static const Color accent = Color(0xFFBB86FC); // Uma cor de destaque
+  //contraste
+  static const Color pretinBomPoZoio = Color.fromRGBO(
+    47,
+    47,
+    47,
+    1,
+  ); // Cor contraste 1
+  static const Color branquinBomPoZoio = Color.fromRGBO(
+    246,
+    221,
+    208,
+    1,
+  ); // Cor contraste 2
+
+  //Avisos, Pontos de atenção
+  static const Color pingaAzul = Color.fromRGBO(
+    40,
+    55,
+    146,
+    1,
+  ); // Cor Avisos, Pontos de atenção 1
+  static const Color mijoDeRico = Color.fromRGBO(
+    243,
+    166,
+    51,
+    1,
+  ); // Cor Avisos, Pontos de atenção 2
+
+  //consistencia visual
+  static const Color verdinJamaicano = Color.fromRGBO(
+    57,
+    157,
+    97,
+    1,
+  ); // Cor Avisos, Pontos de atenção 1
+  static const Color aiQuePaixao = Color.fromRGBO(
+    224,
+    39,
+    43,
+    1,
+  ); // Cor Avisos, Pontos de atenção 2
+
 }
