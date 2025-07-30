@@ -6,18 +6,15 @@ class AppStyles {
   // Evita que alguém instancie esta classe
   AppStyles._();
 
-  static final TextStyle titulo = GoogleFonts.poppins(
-      fontSize: 28.0,
-
-  );
+  static final TextStyle titulo = GoogleFonts.poppins(fontSize: 28.0);
 
   static const TextStyle subtitulo = TextStyle(
     fontSize: 18.0,
-    color: Colors.grey,
+    color: AppColors.pretinBomPoZoio,
   );
 
   static final ButtonStyle botaoElevado = ElevatedButton.styleFrom(
-    backgroundColor: AppColors.primary,
+    backgroundColor: AppColors.pingaAzul,
     foregroundColor: Colors.white,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
   );
